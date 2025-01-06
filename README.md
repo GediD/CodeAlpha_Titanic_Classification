@@ -1,4 +1,4 @@
-# Titanic Survival Prediction
+# [Titanic Survival Prediction](https://github.com/GediD/CodeAlpha_Titanic_Classification/)
 
 This project aims to predict the survival of passengers on the Titanic using machine learning.  The dataset is analyzed and preprocessed to improve model performance.  Various classification models are trained and evaluated, and results are compared to identify the best-performing model.
 
