@@ -19,8 +19,8 @@ Several visualizations were created to understand the relationships between diff
 
 * **Family Category vs. Survival:**
   
- ![family_size_vs_survival](https://github.com/user-attachments/assets/140d1fa0-fe73-4206-9c93-05b1f568a873)
- * Illustrates survival rates categorized by family size groupings (Alone, Small, Medium, Large).
+  ![family_size_vs_survival](https://github.com/user-attachments/assets/140d1fa0-fe73-4206-9c93-05b1f568a873)
+    * Illustrates survival rates categorized by family size groupings (Alone, Small, Medium, Large).
 
 * **Ticket Class vs. Survival:**
   
