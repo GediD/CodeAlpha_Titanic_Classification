@@ -1,46 +1,77 @@
-# [Titanic Survival Prediction](https://github.com/GediD/CodeAlpha_Titanic_Classification/)
+# prompt: write a readme with the charts included
 
-This project aims to predict the survival of passengers on the Titanic using machine learning.  The dataset is analyzed and preprocessed to improve model performance.  Various classification models are trained and evaluated, and results are compared to identify the best-performing model.
+# Titanic Survival Prediction
 
-## Data Analysis and Preprocessing
+This project analyzes the Titanic dataset to predict passenger survival using machine learning.
 
-The project includes exploratory data analysis (EDA) to understand the relationships between features and survival rates. Key steps include:
+## Data Exploration and Visualization
 
-* **Summary Statistics:** Calculation of mean, median, mode, and other descriptive statistics for numerical features.
-* **Correlation Analysis:** Identification of correlations between numerical features using a heatmap.
-* **Encoding Categorical Features:** Conversion of categorical variables into numerical representations using OneHotEncoding.
-* **Feature Scaling:** Standardization or normalization of numerical features to improve model performance.
-* **Addressing Class Imbalance:** Employing techniques like SMOTE and RandomOverSampler to handle the imbalance in the target variable.
+Several visualizations were created to understand the relationships between different features and passenger survival:
 
+* **Age vs. Survival:**  [age_vs_survival.png](age_vs_survival.png)
+    * Shows the distribution of ages for both survivors and non-survivors.
+
+* **Sex vs. Survival:** [sex_vs_survival.png](sex_vs_survival.png)
+    * Illustrates the survival rates for males and females.
+
+* **Fare vs. Survival:** [fare_vs_survival.png](fare_vs_survival.png)
+    * Presents the distribution of fares for survivors and non-survivors.
+
+* **Ticket Class vs. Survival:** [pclass_vs_survival.png](pclass_vs_survival.png)
+    * Shows the survival rates across different ticket classes (Pclass).
+
+
+* **Port of Embarkation vs. Survival:** [embarked_vs_survival.png](embarked_vs_survival.png)
+    * Displays the survival rates based on the port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
+
+* **Family Size vs. Survival:** [familysize_vs_survival.png](familysize_vs_survival.png)
+    * Shows the survival rates based on family size.
+
+* **Age Distribution of Female Survivors:** [female_survivors_age.png](female_survivors_age.png)
+    * Shows the age distribution of female survivors.
+
+* **Age Distribution of Male Survivors:** [male_survivors_age.png](male_survivors_age.png)
+    * Shows the age distribution of male survivors.
+
+* **Fare Category vs. Survival:** [fare_category_vs_survival.png](fare_category_vs_survival.png)
+    * Survival rates across different fare categories (Low, Medium-Low, Medium-High, High)
+
+* **Port of Embarkation vs. Survived:** [embarked_vs_survived.png](embarked_vs_survived.png)
+    * Survival rates based on port of embarkation.  Clarified labels for better understanding.
+
+* **Ticket Class vs. Survival:** [Ticket_class_vs_survival.png](Ticket_class_vs_survival.png)
+     * Shows survival rates based on ticket class.
+
+* **Family Category vs. Survival:**  [Family_Category_vs_Survived]()
+    * Illustrates survival rates categorized by family size groupings (Alone, Small, Medium, Large).
+
+
+* **Age vs. Survival (Detailed):** [Age_vs_Survival.png](Age_vs_Survival.png)
+    * Provides a detailed look at the distribution of ages and their relation to survival.
+
+
+
+## Data Preprocessing
+
+The data undergoes several preprocessing steps:
+
+1.  **Handling Missing Values:** Missing 'Age' values are filled with the mean age, and missing 'Embarked' values are filled with the mode.
+2.  **Data Type Conversion:** Relevant columns are converted to appropriate data types (category, numeric).
+3.  **Feature Engineering:** 'SibSp' and 'Parch' are combined into 'FamilySize'. Unnecessary columns like 'PassengerId', 'Name', 'Ticket', and 'Cabin' is dropped.
+4.  **One-Hot Encoding:** Categorical features ('Embarked', 'Sex') are encoded using one-hot encoding.
+5.  **Feature Scaling:** Features are scaled using StandardScaler to ensure that features with larger values do not unduly influence model training.
 
 ## Model Training and Evaluation
 
-Multiple classification models are trained on the preprocessed dataset:
 
-* Logistic Regression
-* Support Vector Classifier (SVC)
-* Decision Tree Classifier
-* K-Nearest Neighbors Classifier
-* Gaussian Naive Bayes Classifier
-* XGBoost Classifier
-* Random Forest Classifier
-* AdaBoost Classifier
-* Gradient Boosting Classifier
-* Extra Trees Classifier
+Multiple classification models are trained and evaluated using appropriate metrics:
 
-Each model's performance is evaluated using the following metrics:
-
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
-
-Hyperparameter tuning is performed using GridSearchCV to optimize the SVC model.
+* **Model Selection:** Logistic Regression, SVC, Decision Tree, KNN, Gaussian Naive Bayes, XGBoost, Random Forest, AdaBoost, Gradient Boosting, Extra Trees.
+* **Performance Metrics:** Accuracy, Precision, Recall, F1-Score.
 
 ## Results
 
-A table summarizing the performance of each model across the evaluation metrics is provided.  The confusion matrix for each model is also visualized to understand the types of errors made by the classifiers.
+The results are summarized in a table which will be displayed in the output when the code runs.
 
 
 ## Further Improvements
