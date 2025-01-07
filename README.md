@@ -6,7 +6,7 @@ This project analyzes the Titanic dataset to predict passenger survival using ma
 
 Several visualizations were created to understand the relationships between different features and passenger survival:
 
-* **Age vs. Survival:**  [age_vs_survival.png](Images/age_vs_survival.png)
+* **Age vs. Survival:**  ![age_vs_survival](https://github.com/user-attachments/assets/edd3a7b4-f136-4c94-90aa-cc3ad9b71a6c)
     * Shows the distribution of ages for both survivors and non-survivors.
 
 * **Sex vs. Survival:** [sex_vs_survival.png](Images/sex_vs_survival.png)
