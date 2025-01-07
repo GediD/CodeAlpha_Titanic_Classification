@@ -36,6 +36,9 @@ Several visualizations were created to understand the relationships between diff
 
   ![fare_category_vs_survival](https://github.com/user-attachments/assets/6380537d-f67c-4b36-a70b-52f0691631d6)
      * Survival rates across different fare categories (Low, Medium-Low, Medium-High, High)
+* **Descriptive Statistics**
+  ![description_table](https://github.com/user-attachments/assets/488d52dd-53ac-46b2-a238-2d34a3daff2c)
+     * Shows the descriptive statistics of Age, Fare, and Family Size
 
 ## Data Preprocessing
 
