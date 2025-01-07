@@ -7,22 +7,28 @@ This project analyzes the Titanic dataset to predict passenger survival using ma
 
 Several visualizations were created to understand the relationships between different features and passenger survival:
 
-* **Age vs. Survival:** ![age_vs_survival](https://github.com/user-attachments/assets/edd3a7b4-f136-4c94-90aa-cc3ad9b71a6c)
+* **Age vs. Survival:**
+* ![age_vs_survival](https://github.com/user-attachments/assets/edd3a7b4-f136-4c94-90aa-cc3ad9b71a6c)
     * Shows the distribution of ages for both survivors and non-survivors.
 
-* **Sex vs. Survival:**![sex_vs_survival](https://github.com/user-attachments/assets/0753e9a4-c020-4a80-a98d-78c4a2d37903)
+* **Sex vs. Survival:**
+* ![sex_vs_survival](https://github.com/user-attachments/assets/0753e9a4-c020-4a80-a98d-78c4a2d37903)
     * Illustrates the survival rates for males and females.
 
-* **Family Category vs. Survival:**![family_size_vs_survival](https://github.com/user-attachments/assets/140d1fa0-fe73-4206-9c93-05b1f568a873)
+* **Family Category vs. Survival:**
+ ![family_size_vs_survival](https://github.com/user-attachments/assets/140d1fa0-fe73-4206-9c93-05b1f568a873)
     * Illustrates survival rates categorized by family size groupings (Alone, Small, Medium, Large).
 
-* **Ticket Class vs. Survival:**![pclass_vs_survival](https://github.com/user-attachments/assets/bab029c6-fff9-4b93-a62a-55b2087c5343)
+* **Ticket Class vs. Survival:**
+  ![pclass_vs_survival](https://github.com/user-attachments/assets/bab029c6-fff9-4b93-a62a-55b2087c5343)
     * Shows the survival rates across different ticket classes (Pclass).
 
-* **Port of Embarkation vs. Survival:**![embarked_vs_survived](https://github.com/user-attachments/assets/574cf5cd-08a7-474b-b2a1-63da49baf1d1)
+* **Port of Embarkation vs. Survival:**
+  ![embarked_vs_survived](https://github.com/user-attachments/assets/574cf5cd-08a7-474b-b2a1-63da49baf1d1)
     * Displays the survival rates based on the port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
 
-* **Fare Category vs. Survival:**![fare_category_vs_survival](https://github.com/user-attachments/assets/6380537d-f67c-4b36-a70b-52f0691631d6)
+* **Fare Category vs. Survival:**
+  ![fare_category_vs_survival](https://github.com/user-attachments/assets/6380537d-f67c-4b36-a70b-52f0691631d6)
      * Survival rates across different fare categories (Low, Medium-Low, Medium-High, High)
 
 ## Data Preprocessing
