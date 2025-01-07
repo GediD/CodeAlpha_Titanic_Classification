@@ -1,3 +1,4 @@
+![titanic](https://github.com/user-attachments/assets/082c27a8-6921-4b52-a053-f56f5858a262)
 # Titanic Survival Prediction
 
 This project analyzes the Titanic dataset to predict passenger survival using machine learning.
