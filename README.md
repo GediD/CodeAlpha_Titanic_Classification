@@ -47,6 +47,20 @@ The data undergoes several preprocessing steps:
 4.  **One-Hot Encoding:** Categorical features ('Embarked', 'Sex') are encoded using one-hot encoding.
 5.  **Feature Scaling:** Features are scaled using StandardScaler to ensure that features with larger values do not unduly influence model training.
 
+## Data Splitting
+
+The dataset was split into three distinct subsets to ensure robust model training and evaluation:
+
+*   **Training Set (60%):** Used to train the machine learning models, allowing them to learn patterns and relationships in the data.
+*   **Validation Set (20%):** Used to tune hyperparameters and prevent overfitting during the training process. This set helps select the best model configuration.
+*   **Testing Set (20%):** Held out until the very end of the project to provide an unbiased evaluation of the final model's performance on unseen data.
+
+This 60/20/20 split ensures that the model is evaluated on data it has never seen during training or validation, providing a realistic estimate of its real-world performance.
+
+## Data Imbalance Handling
+
+To handle data imbalance, SMOTE from imblearn was used to create synthetic samples for the underrepresented "survived" class.
+
 ## Model Training and Evaluation
 
 
