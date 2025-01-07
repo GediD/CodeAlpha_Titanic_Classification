@@ -96,3 +96,9 @@ The results are summarized in a table displayed in the output when the code runs
 * scikit-learn
 * imblearn
 * xgboost
+
+## Kaggle Competition
+
+I participated in the Kaggle challenge and achieved the accuracy shown below.
+  ![Kaggle_Submission](https://github.com/user-attachments/assets/0cead157-5b0f-4869-8d4e-d6ea9f6a16a9)
+
