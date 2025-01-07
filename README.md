@@ -6,48 +6,23 @@ This project analyzes the Titanic dataset to predict passenger survival using ma
 
 Several visualizations were created to understand the relationships between different features and passenger survival:
 
-* **Age vs. Survival:**  [age_vs_survival.png](age_vs_survival.png)
+* **Age vs. Survival:**  [age_vs_survival.png](Images/age_vs_survival.png)
     * Shows the distribution of ages for both survivors and non-survivors.
 
-* **Sex vs. Survival:** [sex_vs_survival.png](sex_vs_survival.png)
+* **Sex vs. Survival:** [sex_vs_survival.png](Images/sex_vs_survival.png)
     * Illustrates the survival rates for males and females.
 
-* **Fare vs. Survival:** [fare_vs_survival.png](fare_vs_survival.png)
-    * Presents the distribution of fares for survivors and non-survivors.
+* **Family Category vs. Survival:**  [Family_Category_vs_Survived](Images/family_size_vs_survival.png)
+    * Illustrates survival rates categorized by family size groupings (Alone, Small, Medium, Large).
 
-* **Ticket Class vs. Survival:** [pclass_vs_survival.png](pclass_vs_survival.png)
+* **Ticket Class vs. Survival:** [ticket_class_vs_survival.png](Images/pclass_vs_survival.png)
     * Shows the survival rates across different ticket classes (Pclass).
-
 
 * **Port of Embarkation vs. Survival:** [embarked_vs_survival.png](embarked_vs_survival.png)
     * Displays the survival rates based on the port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
 
-* **Family Size vs. Survival:** [familysize_vs_survival.png](familysize_vs_survival.png)
-    * Shows the survival rates based on family size.
-
-* **Age Distribution of Female Survivors:** [female_survivors_age.png](female_survivors_age.png)
-    * Shows the age distribution of female survivors.
-
-* **Age Distribution of Male Survivors:** [male_survivors_age.png](male_survivors_age.png)
-    * Shows the age distribution of male survivors.
-
 * **Fare Category vs. Survival:** [fare_category_vs_survival.png](fare_category_vs_survival.png)
     * Survival rates across different fare categories (Low, Medium-Low, Medium-High, High)
-
-* **Port of Embarkation vs. Survived:** [embarked_vs_survived.png](embarked_vs_survived.png)
-    * Survival rates based on port of embarkation.  Clarified labels for better understanding.
-
-* **Ticket Class vs. Survival:** [Ticket_class_vs_survival.png](Ticket_class_vs_survival.png)
-     * Shows survival rates based on ticket class.
-
-* **Family Category vs. Survival:**  [Family_Category_vs_Survived]()
-    * Illustrates survival rates categorized by family size groupings (Alone, Small, Medium, Large).
-
-
-* **Age vs. Survival (Detailed):** [Age_vs_Survival.png](Age_vs_Survival.png)
-    * Provides a detailed look at the distribution of ages and their relation to survival.
-
-
 
 ## Data Preprocessing
 
