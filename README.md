@@ -1,5 +1,3 @@
-# prompt: write a readme with the charts included
-
 # Titanic Survival Prediction
 
 This project analyzes the Titanic dataset to predict passenger survival using machine learning.
