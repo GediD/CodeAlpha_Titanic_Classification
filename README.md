@@ -76,6 +76,11 @@ Multiple classification models are trained and evaluated using appropriate metri
 
 The results are summarized in a table displayed in the output when the code runs.
 ![model_performance](https://github.com/user-attachments/assets/990a97b9-fa70-4ce1-ad43-0dcad9911cc0)
+![Confusion Matrix](https://github.com/user-attachments/assets/5bfd147a-b7c2-4f59-aae4-197070e309a9)
+
+### Feature Importance
+
+![Feature Importance](https://github.com/user-attachments/assets/de6f69a6-9761-4d37-a727-78215506ab7b)
 
 
 
