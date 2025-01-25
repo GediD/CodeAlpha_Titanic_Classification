@@ -39,6 +39,8 @@ The data used in this project is sourced from [Specify the data source, e.g., Ka
 8. **Model Training and Evaluation:** Several classification models (Logistic Regression, SVM, Decision Tree, KNN, Naive Bayes, XGBoost, Random Forest, AdaBoost, Gradient Boosting, Extra Trees) were trained and evaluated using accuracy, precision, recall, F1-score, and a confusion matrix.
 9. **Hyperparameter Tuning:**  Performing hyperparameter tuning on the best-performing model (Support Vector Classifier) using GridSearchCV.
 ![Titanic_Charts](https://github.com/user-attachments/assets/1d6ac3a6-224f-4337-b2a5-71822a92f087)
+![Correlation Analysis Heat Map](https://github.com/user-attachments/assets/355ad710-8b6a-48b6-93aa-794ccc5bf87f)
+
 
 ## Results
 
