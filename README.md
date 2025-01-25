@@ -1,96 +1,55 @@
 ![titanic](https://github.com/user-attachments/assets/082c27a8-6921-4b52-a053-f56f5858a262)
 # [Titanic Survival Prediction](https://github.com/GediD/CodeAlpha_Titanic_Classification/)
 
-This project analyzes the Titanic dataset to predict passenger survival using machine learning.
-
-## Data Exploration and Visualization
-
-Several visualizations were created to understand the relationships between different features and passenger survival:
-
-* **Age vs. Survival:**
-  
-  ![age_vs_survival](https://github.com/user-attachments/assets/edd3a7b4-f136-4c94-90aa-cc3ad9b71a6c)
-    * Shows the distribution of ages for both survivors and non-survivors.
-
-* **Sex vs. Survival:**
-  
-  ![sex_vs_survival](https://github.com/user-attachments/assets/0753e9a4-c020-4a80-a98d-78c4a2d37903)
-    * Illustrates the survival rates for males and females.
-
-* **Family Category vs. Survival:**
-  
-  ![family_size_vs_survival](https://github.com/user-attachments/assets/140d1fa0-fe73-4206-9c93-05b1f568a873)
-    * Illustrates survival rates categorized by family size groupings (Alone, Small, Medium, Large).
-
-* **Ticket Class vs. Survival:**
-  
-  ![pclass_vs_survival](https://github.com/user-attachments/assets/bab029c6-fff9-4b93-a62a-55b2087c5343)
-    * Shows the survival rates across different ticket classes (Pclass).
-
-* **Port of Embarkation vs. Survival:**
-  
-  ![embarked_vs_survived](https://github.com/user-attachments/assets/574cf5cd-08a7-474b-b2a1-63da49baf1d1)
-    * Displays the survival rates based on the port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
-
-* **Fare Category vs. Survival:**
-
-  ![fare_category_vs_survival](https://github.com/user-attachments/assets/6380537d-f67c-4b36-a70b-52f0691631d6)
-     * Survival rates across different fare categories (Low, Medium-Low, Medium-High, High)
-* **Descriptive Statistics**
-  ![description_table](https://github.com/user-attachments/assets/488d52dd-53ac-46b2-a238-2d34a3daff2c)
-     * Shows the descriptive statistics of Age, Fare, and Family Size
-
-## Data Preprocessing
-
-The data undergoes several preprocessing steps:
-
-1.  **Handling Missing Values:** Missing 'Age' values are filled with the mean age, and missing 'Embarked' values are filled with the mode.
-2.  **Data Type Conversion:** Relevant columns are converted to appropriate data types (category, numeric).
-3.  **Feature Engineering:** 'SibSp' and 'Parch' are combined into 'FamilySize'. Unnecessary columns like 'PassengerId', 'Name', 'Ticket', and 'Cabin' is dropped.
-4.  **One-Hot Encoding:** Categorical features ('Embarked', 'Sex') are encoded using one-hot encoding.
-5.  **Feature Scaling:** Features are scaled using StandardScaler to ensure that features with larger values do not unduly influence model training.
-
-## Data Splitting
-
-The dataset was split into three distinct subsets to ensure robust model training and evaluation:
-
-*   **Training Set (60%):** Used to train the machine learning models, allowing them to learn patterns and relationships in the data.
-*   **Validation Set (20%):** Used to tune hyperparameters and prevent overfitting during the training process. This set helps select the best model configuration.
-*   **Testing Set (20%):** Held out until the very end of the project to provide an unbiased evaluation of the final model's performance on unseen data.
-
-This 60/20/20 split ensures that the model is evaluated on data it has never seen during training or validation, providing a realistic estimate of its real-world performance.
-
-## Data Imbalance Handling
-
-To handle data imbalance, SMOTE from imblearn was used to create synthetic samples for the underrepresented "survived" class.
-
-## Model Training and Evaluation
 
 
-Multiple classification models are trained and evaluated using appropriate metrics:
+This project aims to predict the survival of passengers on the Titanic using machine learning.  The analysis involves data cleaning, exploratory data analysis (EDA), feature engineering, model training, and performance evaluation.
 
-* **Model Selection:** Logistic Regression, SVC, Decision Tree, KNN, Gaussian Naive Bayes, XGBoost, Random Forest, AdaBoost, Gradient Boosting, Extra Trees.
-* **Performance Metrics:** Accuracy, Precision, Recall, F1-Score.
+## Project Overview
+
+The dataset contains information about Titanic passengers, including demographics, ticket details, and cabin information.  The goal is to build a model that accurately predicts survival based on these features.
+
+## Data
+
+The data used in this project is sourced from [Specify the data source, e.g., Kaggle].  The dataset consists of the following features:
+
+
+* **PassengerId:** Unique identifier for each passenger.
+* **Survived:** Survival status (0 = No, 1 = Yes).
+* **Pclass:** Passenger class (1 = 1st, 2 = 2nd, 3 = 3rd).
+* **Name:** Passenger name.
+* **Sex:** Passenger gender.
+* **Age:** Passenger age.
+* **SibSp:** Number of siblings/spouses aboard.
+* **Parch:** Number of parents/children aboard.
+* **Ticket:** Ticket number.
+* **Fare:** Passenger fare.
+* **Cabin:** Cabin number.
+* **Embarked:** Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
+
+## Methodology
+
+1. **Data Cleaning:** Handling missing values, and converting data types.
+2. **Exploratory Data Analysis (EDA):** Examining data distributions, correlations, and relationships between features and survival.  Visualizations are used to gain insights into the data.
+3. **Feature Engineering:** Creating new features from existing ones to improve model performance (e.g., family size, title from name).
+4. **One-Hot Encoding:** Converting categorical variables into numerical representations suitable for machine learning models.
+5. **Data Splitting:** Dividing the data into training and testing sets using a stratified parameter to preserve class imbalance.
+6. **Feature Scaling:** Applying RobustScaler to handle features with varying scales.
+7. **Addressing Class Imbalance:** Using SMOTE to oversample the minority class (non-survivors) to balance the training data.
+8. **Model Training and Evaluation:** Several classification models (Logistic Regression, SVM, Decision Tree, KNN, Naive Bayes, XGBoost, Random Forest, AdaBoost, Gradient Boosting, Extra Trees) were trained and evaluated using accuracy, precision, recall, F1-score, and a confusion matrix.
+9. **Hyperparameter Tuning:**  Performing hyperparameter tuning on the best-performing model (Support Vector Classifier) using GridSearchCV.
+![Titanic_Charts](https://github.com/user-attachments/assets/1d6ac3a6-224f-4337-b2a5-71822a92f087)
 
 ## Results
 
-The results are summarized in a table displayed in the output when the code runs.
-![model_performance](https://github.com/user-attachments/assets/990a97b9-fa70-4ce1-ad43-0dcad9911cc0)
-![Confusion Matrix](https://github.com/user-attachments/assets/5bfd147a-b7c2-4f59-aae4-197070e309a9)
+The Support Vector Classifier (SVC) achieved the highest accuracy of approximately 83.2%.  Hyperparameter tuning did not significantly improve these metrics. The model strongly predicts Titanic's survival, highlighting the importance of features like age group, passenger class, fare, and family size.
 
-### Feature Importance
+## Future Work
 
-![Feature Importance](https://github.com/user-attachments/assets/de6f69a6-9761-4d37-a727-78215506ab7b)
-
-
-
-## Further Improvements
-
-* Explore more advanced feature engineering techniques.
-* Experiment with other classification models and ensemble methods.
-* Perform more rigorous hyperparameter tuning.
-* Analyze the importance of features for better model interpretability.
-
+* Explore additional feature engineering techniques.
+* Investigate other classification models.
+* Perform more extensive hyperparameter tuning.
+* Investigate the impact of different data preprocessing methods.
 
 ## Dependencies
 
@@ -102,8 +61,19 @@ The results are summarized in a table displayed in the output when the code runs
 * imblearn
 * xgboost
 
+## Usage
+
+1. Install the required dependencies.
+2. Run the Jupyter Notebook or Python script.
+
+
+## Contact
+
+[Gedion Dereje/www.linkedin.com/in/gedion-dereje-woltedji]
+
 ## Kaggle Competition
 
 I participated in the Kaggle challenge and achieved the accuracy shown below.
-  ![Kaggle_Submission](https://github.com/user-attachments/assets/0cead157-5b0f-4869-8d4e-d6ea9f6a16a9)
+  ![Kaggle_Submission_2](https://github.com/user-attachments/assets/ef646f01-7a9e-442a-a18c-28d4b1dde4ab)
+
 
